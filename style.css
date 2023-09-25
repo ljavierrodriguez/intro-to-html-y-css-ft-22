@@ -1,0 +1,98 @@
+/*
+Especificidad: (id,class,element)
+*/
+
+/* 
+
+margin: 10px; trbl
+margin: 10px 10px; tb rl
+margin: 10px 10px 10px; t rl b
+margin: 10px 10px 10px 10px; t r b l
+
+
+margin-top
+margin-left
+margin-right
+margin-bottom
+
+
+*/
+
+/* 
+
+padding: 10px; trbl
+padding: 10px 10px; tb rl
+padding: 10px 10px 10px; t rl b
+padding: 10px 10px 10px 10px; t r b l
+
+padding-top
+padding-left
+padding-right
+padding-bottom
+
+*/
+
+/* Selector de ID */
+
+#home {
+    border: 10px dashed red; 
+    margin: 10px 20px;
+}
+/* Selector de Clase */
+.titulo {
+    font-family: Verdana;
+}
+/* Selector de Elemento o Etiqueta */
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+a {
+    display: inline;
+}
+
+/* Selector Universal */
+
+* {
+    border: 0;
+}
+
+/* Selector descendiente */
+
+#home a {
+    color: brown;
+    font-size: 20px;
+}
+
+#home p {
+    border-bottom: 1px solid green;
+}
+
+/* Selector Adyacente */
+
+h1 + p {
+    font-style: italic;
+}
+
+/* Selector Hijo */
+
+#home > a {
+    color: brown;
+    font-size: 20px;
+}
+
+/* Selector Hermano */
+
+h1 ~ p {
+    font-style: italic;
+}
+
+#home > div > .subtitle {
+    
+}
