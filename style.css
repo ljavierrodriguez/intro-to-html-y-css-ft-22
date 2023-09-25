@@ -87,12 +87,86 @@ h1 + p {
     font-size: 20px;
 }
 
+#home > div > .subtitle {
+    font-size: 1rem;
+}
+
 /* Selector Hermano */
 
 h1 ~ p {
     font-style: italic;
 }
 
-#home > div > .subtitle {
-    
+/* Selector de Atributo */
+
+a[href]{
+    color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a[class]{
+    font-style: italic;
+}
+
+a[class="link"]{ /* Igual a link */
+    color: red;
+}
+
+a[class$="link"]{ /* Finalice el texto con la palabra link */
+    color: yellow;
+}
+
+a[href^="https"]{ /* Comience el texto con la palabra http */
+    color: violet;
+}
+
+a[class*="link"]{
+    color: black;
+}
+
+a[class~="link"]{
+    color: goldenrod;
+}
+
+/* Selector pseudoclase */
+
+button:hover {
+    background-color: blueviolet;
+}
+
+input[type="checkbox"]:checked {
+    border: 20px solid red;
+}
+
+.saludo::before {
+    content: 'Hola, ';
+    display: inline;
+    margin: 2px;
+}
+.saludo::after {
+    content: 'Como estas? \2663';
+    display: inline;
+    margin: 2px;
+    color: red;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.box:hover {
+    background-color: brown;
+}
+
+a:not(.link){
+    color: cadetblue;
+}
+
+/* pseudoelement */
+
+p::first-letter {
+    text-transform: uppercase;
+    font-size: 20px;
 }
