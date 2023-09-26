@@ -1,0 +1,66 @@
+.main {
+    width: 90%;
+    padding: 20px;
+    border: 1px solid gray;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.main .boton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: cadetblue;
+    color: white;
+    border: 0;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.main .text {
+    text-align: justify;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+@media (max-width: 768px) {
+
+    .main {
+        padding: 10px;
+    }
+
+    .main .boton {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .main .text {
+        font-size: 2rem;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        padding: 10px;
+    }
+    .main .boton {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+    .main .text {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main {
+        padding: 10px;
+    }
+    .main .boton {
+        font-size: 20px;
+        padding: 15px 30px;
+    }
+    .main .text {
+        font-size: 1rem;
+    }
+}
